@@ -14,7 +14,15 @@ public class EspritArrayList implements University {
     public boolean rechercherEtudiant(Etudiant e) {
         return etudiant.contains(e);
     }
-
+    @Override
+    public boolean rechercherEtudiant(String nom) {
+        for (int i=0; i<etudiant.size();i++) {
+            if (etudiant.get(i).getNom().equals(nom)) {
+                return true;
+            }
+        }
+        return false;
+    }
     @Override
     public boolean rechercherEtudiant(String nom) {
         for (Etudiant e : etudiant) {
