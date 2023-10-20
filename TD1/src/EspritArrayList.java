@@ -31,13 +31,6 @@ public class EspritArrayList implements University {
     }
 
     @Override
-    public void displayEtudiants() {
-        for (Etudiant e : etudiant) {
-            System.out.println(e);
-        }
-    }
-
-    @Override
     public void trierEtudiantsParId() {
         Collections.sort(etudiant, new Comparator<Etudiant>() {
             @Override
